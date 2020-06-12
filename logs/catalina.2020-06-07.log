@@ -1,0 +1,17 @@
+07-Jun-2020 03:11:48.183 信息 [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload 已开始重新加载名为[/myproject]的上下文
+07-Jun-2020 03:11:48.380 警告 [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [myproject] 注册了JDBC驱动程序 [com.mysql.jdbc.Driver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-Jun-2020 03:11:48.386 警告 [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[myproject]似乎启动了一个名为[Abandoned connection cleanup thread]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)]
+07-Jun-2020 03:11:54.072 信息 [http-nio-8080-exec-42] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-Jun-2020 03:12:04.752 信息 [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload 已完成重新加载名为/myproject的上下文
+07-Jun-2020 17:13:13.645 信息 [Thread-4] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-Jun-2020 17:13:13.677 信息 [Thread-4] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-Jun-2020 17:13:13.824 警告 [localhost-startStop-5] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [myproject] 注册了JDBC驱动程序 [com.mysql.jdbc.Driver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-Jun-2020 17:13:13.824 警告 [localhost-startStop-5] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[myproject]似乎启动了一个名为[Abandoned connection cleanup thread]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)]
+07-Jun-2020 17:13:13.851 信息 [Thread-4] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 17:13:13.860 信息 [Thread-4] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
