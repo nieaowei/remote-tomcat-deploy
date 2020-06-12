@@ -8,6 +8,6 @@ WORKDIR /usr/local/tomcat
 
 RUN  ls && cat conf/tomcat-users.xml
 
-EXPOSE 8080
+# EXPOSE 8080
 
 CMD ["./bin/catalina.sh", "run"]
